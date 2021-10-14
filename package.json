@@ -43,7 +43,32 @@
           "group": "navigation@1"
         }
       ]
-    }
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "beautifulGirl",
+          "title": "美女",
+          "icon": "images/beautifulGirl.svg"
+        }
+      ]
+    },
+		"views": {
+			"beautifulGirl": [
+					{
+							"id": "beautifulGirl1",
+							"name": "国内美女"
+					},
+					{
+							"id": "beautifulGirl2",
+							"name": "国外美女"
+					},
+					{
+							"id": "beautifulGirl3",
+							"name": "asd"
+					}
+			]
+	}
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
