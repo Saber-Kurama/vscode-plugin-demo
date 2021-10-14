@@ -1,6 +1,6 @@
 # vscode-plugin-demo README
 
-This is the README for your extension "vscode-plugin-demo". After writing up a brief description, we recommend including the following sections.
+123This is the README123 for your extension "vscode-plugin-demo". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

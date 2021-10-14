@@ -3,12 +3,14 @@
 	"displayName": "vscode-plugin-demo",
 	"description": "",
 	"version": "0.0.1",
+	"publisher": "saber",
 	"engines": {
 		"vscode": "^1.61.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"repository": "",
 	"activationEvents": [
         "onCommand:vscode-plugin-demo.helloWorld"
 	],
@@ -19,6 +21,14 @@
 				"command": "vscode-plugin-demo.helloWorld",
 				"title": "Hello World"
 			}
+		],
+		"keybindings": [
+			{
+				"command": "vscode-plugin-demo.helloWorld",
+				"key": "ctrl+f10",
+				"mac": "cmd+f10",
+				"when": "editorTextFocus"
+			}
 		]
 	},
 	"scripts": {
@@ -27,7 +37,7 @@
 		"watch": "webpack --watch",
 		"package": "webpack --mode production --devtool hidden-source-map",
 		"compile-tests": "tsc -p . --outDir out",
-		"watch-tests": "tsc -p -w . --outDir out",
+		"watch-tests": "tsc -w -p . --outDir out",
 		"pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js"
